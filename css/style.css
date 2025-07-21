@@ -1,0 +1,200 @@
+/*
+* Root Variables
+*/
+:root {
+    --white-color: #ffffff;
+    --black-color: #151515;
+    --beige-color: #FAF2E7;
+    --orange-color: #DC7F11;
+    --light-gray-color: #999999;
+    --gray-color: #2B2B2B;
+
+    --font-size: 62.5%;
+    --font-weight: 600;
+}
+
+/*
+* Main Styles
+*/
+html {
+    scroll-behavior: smooth;
+    font-size: var(--font-size);
+    font-weight: var(--font-weight);
+    color: var(--gray-color);
+    font-family: "Khula", sans-serif;
+}
+
+body {
+    font-size: 1.4rem;
+    background-color: var(--white-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--black-color);
+}
+
+.container {
+    max-width: 145rem;
+    margin: 0 auto;
+    padding: 0rem 2.5rem;
+}
+
+/*
+* Header Styles
+*/
+.header {
+    padding-top: 10rem;
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.primary-heading {
+    font-size: 4.5rem;
+    font-weight: 700;
+}
+
+.theme-btn {
+    background-color: transparent;
+    padding: 1rem 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+
+    transition: all 0.2s ease-in-out;
+}
+
+.theme-btn:hover {
+    background-color: var(--beige-color);
+}
+
+.fa-moon {
+    font-size: 2.5rem;
+
+    transition: all 0.2s ease-in;
+}
+
+.theme-btn:hover .fa-moon {
+    color: var(--orange-color);
+}
+
+.signature-text {
+    color: var(--light-gray-color);
+    font-size: 1.6rem;
+}
+
+/*
+* Cards Section
+*/
+.cards {
+    padding: 5rem 0;
+}
+
+.cards-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+}
+
+.card-item {
+    padding: 1.5rem;
+    padding-top: 3rem;
+    border-radius: 1rem;
+    -webkit-box-shadow: 0px 0px 12px 6px rgba(34, 60, 80, 0.15);
+    -moz-box-shadow: 0px 0px 12px 6px rgba(34, 60, 80, 0.15);
+    box-shadow: 0px 0px 12px 6px rgba(34, 60, 80, 0.15);
+    cursor: pointer;
+
+    transition: all 0.3s ease-in-out;
+}
+
+.card-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.card-item:not(.add) .icon-wrapper {
+    background-color: var(--beige-color);
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-item:not(.add) .fa-solid {
+    color: var(--orange-color);
+    font-size: 5rem;
+
+    transition: all 0.2s ease-in;
+}
+
+.secondary-heading {
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin-top: 1rem;
+
+    transition: all 0.3s ease-in-out;
+}
+
+.card-item:not(.add) .secondary-heading {
+    color: var(--gray-color);
+}
+
+.card-item:not(.add):hover .fa-solid {
+    font-size: 6rem;
+}
+
+.card-item:not(.add) .card-results {
+    transition: all 0.3s ease-in-out;
+}
+
+.card-item:not(.add):hover {
+    background-color: var(--orange-color);
+    transform: scale(1.1);
+}
+
+.card-item:not(.add):hover .secondary-heading {
+    color: var(--white-color);
+}
+
+.card-item:not(.add):hover .card-results {
+    color: var(--white-color);
+}
+
+.card-item.add {
+    background-color: var(--orange-color);
+}
+
+.card-item.add .fa-solid {
+    color: var(--white-color);
+    font-size: 10rem;
+
+    transition: all 0.3s ease-in-out;
+}
+
+.card-item.add .secondary-heading {
+    color: var(--white-color);
+}
+
+.card-item.add:hover {
+    transform: scale(1.1);
+}
+
+.card-item.add:hover .fa-solid {
+    font-size: 11rem;
+}
