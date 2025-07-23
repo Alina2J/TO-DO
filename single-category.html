@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List | Single Category</title>
+    <script src="https://kit.fontawesome.com/4b52cc8072.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/reseter.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <a href="./index.html" class="back-btn">
+                <i class="fa-solid fa-arrow-left"></i>
+                <p>Go Back</p>
+            </a>
+            <div class="header-wrapper">
+                <h1 class="primary-heading">Food</h1>
+                <button class="btn">
+                    Create List
+                </button>
+            </div>
+        </header>
+        <section class="categories">
+            <div class="categories-list">
+                <button class="category-btn active">All</button>
+                <button class="category-btn">Completed</button>
+            </div>
+        </section>
+        <section class="cards">
+            <div class="cards-list col-3">
+                <div class="card-task">
+                    <div class="card-header">
+                        <div class="card-header__wrapper">
+                            <div class="card-checkbox">
+                                <input type="checkbox" name="card-completed" id="card-completed-1" value="1">
+                                <label for="card-completed">
+                                    <h2 class="secondary-heading">Food Ingredients</h2>
+                                </label>
+                            </div>
+                            <button class="menu-btn"><i class="fa-solid fa-ellipsis"></i></button>
+                        </div>
+                        <p class="card-results">2/8 Done</p>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-body__wrapper">
+                            <div class="task-checkbox">
+                                <input checked type="checkbox" name="task-completed" id="task-completed-1" value="1">
+                                <label for="task-completed">
+                                    <p>Buy papper</p>
+                                </label>
+                            </div>
+                            <div class="task-checkbox">
+                                <input checked type="checkbox" name="task-completed" id="task-completed-2" value="2">
+                                <label for="task-completed">
+                                    <p>Boil meat and other protein</p>
+                                </label>
+                            </div>
+                            <div class="task-checkbox">
+                                <input type="checkbox" name="task-completed" id="task-completed-3" value="3">
+                                <label for="task-completed">
+                                    <p>Buy vegetable oil</p>
+                                </label>
+                            </div>
+                        </div>
+                        <button class="outline-btn">View All</button>
+                    </div>
+                </div>
+                <div class="card-task">
+                    <div class="card-header">
+                        <div class="card-header__wrapper">
+                            <div class="card-checkbox">
+                                <input type="checkbox" name="card-completed" id="card-completed-2" value="2">
+                                <label for="card-completed">
+                                    <h2 class="secondary-heading">Shopping List</h2>
+                                </label>
+                            </div>
+                            <button class="menu-btn"><i class="fa-solid fa-ellipsis"></i></button>
+                        </div>
+                        <p class="card-results">2/30 Done</p>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-body__wrapper">
+                            <div class="task-checkbox">
+                                <input checked type="checkbox" name="task-completed" id="task-completed-4" value="4">
+                                <label for="task-completed">
+                                    <p>Buy tomato half plastic</p>
+                                </label>
+                            </div>
+                            <div class="task-checkbox">
+                                <input checked type="checkbox" name="task-completed" id="task-completed-5" value="5">
+                                <label for="task-completed">
+                                    <p>Buy palm oil one bottle</p>
+                                </label>
+                            </div>
+                            <div class="task-checkbox">
+                                <input type="checkbox" name="task-completed" id="task-completed-6" value="6">
+                                <label for="task-completed">
+                                    <p>Buy potatoes one sack</p>
+                                </label>
+                            </div>
+                        </div>
+                        <button class="outline-btn">View All</button>
+                    </div>
+                </div>
+                <div class="card-task">
+                    <div class="card-header">
+                        <div class="card-header__wrapper">
+                            <div class="card-checkbox">
+                                <input type="checkbox" name="card-completed" id="card-completed-3" value="3">
+                                <label for="card-completed">
+                                    <h2 class="secondary-heading">Lifestyle</h2>
+                                </label>
+                            </div>
+                            <button class="menu-btn"><i class="fa-solid fa-ellipsis"></i></button>
+                        </div>
+                        <p class="card-results">0/15 Task Completed</p>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-body__wrapper">
+                            <div class="task-checkbox">
+                                <input checked type="checkbox" name="task-completed" id="task-completed-7" value="7">
+                                <label for="task-completed">
+                                    <p>Buy tomato half plastic</p>
+                                </label>
+                            </div>
+                            <div class="task-checkbox">
+                                <input checked type="checkbox" name="task-completed" id="task-completed-8" value="8">
+                                <label for="task-completed">
+                                    <p>Buy palm oil one bottle</p>
+                                </label>
+                            </div>
+                            <div class="task-checkbox">
+                                <input type="checkbox" name="task-completed" id="task-completed-9" value="9">
+                                <label for="task-completed">
+                                    <p>Buy potatoes one sack</p>
+                                </label>
+                            </div>
+                        </div>
+                        <button class="outline-btn">View All</button>
+                    </div>
+                </div>
+                <div class="card-task">
+                    <div class="card-header">
+                        <div class="card-header__wrapper">
+                            <div class="card-checkbox">
+                                <input type="checkbox" name="card-completed" id="card-completed-4" value="4">
+                                <label for="card-completed">
+                                    <h2 class="secondary-heading">Spices Needed</h2>
+                                </label>
+                            </div>
+                            <button class="menu-btn"><i class="fa-solid fa-ellipsis"></i></button>
+                        </div>
+                        <p class="card-results">0/15 Task Completed</p>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-body__wrapper">
+                            <div class="task-checkbox">
+                                <input checked type="checkbox" name="task-completed" id="task-completed-10" value="10">
+                                <label for="task-completed">
+                                    <p>Buy tomato half plastic</p>
+                                </label>
+                            </div>
+                            <div class="task-checkbox">
+                                <input checked type="checkbox" name="task-completed" id="task-completed-11" value="11">
+                                <label for="task-completed">
+                                    <p>Buy palm oil one bottle</p>
+                                </label>
+                            </div>
+                            <div class="task-checkbox">
+                                <input type="checkbox" name="task-completed" id="task-completed-12" value="12">
+                                <label for="task-completed">
+                                    <p>Buy potatoes one sack</p>
+                                </label>
+                            </div>
+                        </div>
+                        <button class="outline-btn">View All</button>
+                    </div>
+                </div>
+                <div class="card-task">
+                    <div class="card-header">
+                        <div class="card-header__wrapper">
+                            <div class="card-checkbox">
+                                <input type="checkbox" name="card-completed" id="card-completed-5" value="5">
+                                <label for="card-completed">
+                                    <h2 class="secondary-heading">Cake Ingredients</h2>
+                                </label>
+                            </div>
+                            <button class="menu-btn"><i class="fa-solid fa-ellipsis"></i></button>
+                        </div>
+                        <p class="card-results">0/15 Task Completed</p>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-body__wrapper">
+                            <div class="task-checkbox">
+                                <input checked type="checkbox" name="task-completed" id="task-completed-13" value="13">
+                                <label for="task-completed">
+                                    <p>Buy tomato half plastic</p>
+                                </label>
+                            </div>
+                            <div class="task-checkbox">
+                                <input checked type="checkbox" name="task-completed" id="task-completed-14" value="14">
+                                <label for="task-completed">
+                                    <p>Buy palm oil one bottle</p>
+                                </label>
+                            </div>
+                            <div class="task-checkbox">
+                                <input type="checkbox" name="task-completed" id="task-completed-15" value="15">
+                                <label for="task-completed">
+                                    <p>Buy potatoes one sack</p>
+                                </label>
+                            </div>
+                        </div>
+                        <button class="outline-btn">View All</button>
+                    </div>
+                </div>
+                <div class="card-task">
+                    <div class="card-header">
+                        <div class="card-header__wrapper">
+                            <div class="card-checkbox">
+                                <input type="checkbox" name="card-completed" id="card-completed-6" value="6">
+                                <label for="card-completed">
+                                    <h2 class="secondary-heading">Food Ingredients</h2>
+                                </label>
+                            </div>
+                            <button class="menu-btn"><i class="fa-solid fa-ellipsis"></i></button>
+                        </div>
+                        <p class="card-results">0/15 Task Completed</p>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-body__wrapper">
+                            <div class="task-checkbox">
+                                <input checked type="checkbox" name="task-completed" id="task-completed-16" value="16">
+                                <label for="task-completed">
+                                    <p>Buy tomato half plastic</p>
+                                </label>
+                            </div>
+                            <div class="task-checkbox">
+                                <input checked type="checkbox" name="task-completed" id="task-completed-17" value="17">
+                                <label for="task-completed">
+                                    <p>Buy palm oil one bottle</p>
+                                </label>
+                            </div>
+                            <div class="task-checkbox">
+                                <input type="checkbox" name="task-completed" id="task-completed-18" value="18">
+                                <label for="task-completed">
+                                    <p>Buy potatoes one sack</p>
+                                </label>
+                            </div>
+                        </div>
+                        <button class="outline-btn">View All</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="pagination">
+            <a class="pagination-prev disabled" href=""><i class="fa-solid fa-chevron-left"></i></a>
+            <a class="pagination-btn active" href="">1</a>
+
+            <a class="pagination-btn" href="">2</a>
+
+            <a class="pagination-btn" href="">3</a>
+
+            <a class="pagination-btn" href="">4</a>
+
+            <a class="pagination-next" href=""><i class="fa-solid fa-chevron-right"></i></a>
+        </section>
+    </div>
+</body>
+
+</html>

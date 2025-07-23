@@ -21,7 +21,7 @@ html {
     font-size: var(--font-size);
     font-weight: var(--font-weight);
     color: var(--gray-color);
-    font-family: "Khula", sans-serif;
+    font-family: "Inter", sans-serif;
 }
 
 body {
@@ -43,6 +43,42 @@ h6 {
     margin: 0 auto;
     padding: 0rem 2.5rem;
 }
+
+.btn {
+    background-color: var(--orange-color);
+    color: var(--beige-color);
+    padding: 1.5rem 2.5rem;
+    border-radius: 1rem;
+
+    transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: var(--beige-color);
+    color: var(--orange-color);
+}
+
+.col-3 {
+    grid-template-columns: repeat(3, 1fr) !important;
+}
+
+.outline-btn {
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--orange-color);
+    border-radius: 0.5rem;
+    color: var(--orange-color);
+
+    transition: all 0.3s ease-in-out;
+}
+
+.outline-btn:hover {
+    background-color: var(--orange-color);
+    color: var(--beige-color);
+}
+
+/*
+* HOME PAGE
+*/
 
 /*
 * Header Styles
@@ -96,7 +132,7 @@ h6 {
 * Cards Section
 */
 .cards {
-    padding: 5rem 0;
+    padding: 3rem 0;
 }
 
 .cards-list {
@@ -113,6 +149,7 @@ h6 {
     -moz-box-shadow: 0px 0px 12px 6px rgba(34, 60, 80, 0.15);
     box-shadow: 0px 0px 12px 6px rgba(34, 60, 80, 0.15);
     cursor: pointer;
+    color: var(--gray-color);
 
     transition: all 0.3s ease-in-out;
 }
@@ -197,4 +234,247 @@ h6 {
 
 .card-item.add:hover .fa-solid {
     font-size: 11rem;
+}
+
+/*
+* SINGLE CATEGORY PAGE
+*/
+
+/*
+* Header Styles
+*/
+
+.back-btn {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    color: var(--orange-color);
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+
+    transition: all 0.3s ease-in-out;
+}
+
+.back-btn:hover {
+    color: var(--gray-color);
+    transform: translate(-5px, 0);
+}
+
+/*
+* Categories Styles
+*/
+
+.categories-list {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.category-btn {
+    color: var(--light-gray-color);
+    background: transparent;
+    padding: 1rem 3rem;
+    border-radius: 1rem;
+
+    transition: all 0.3s ease-in-out;
+}
+
+.category-btn:not(.active):hover {
+    color: var(--orange-color);
+    background-color: var(--beige-color);
+}
+
+.category-btn.active {
+    color: var(--orange-color);
+    background-color: var(--beige-color);
+}
+
+/*
+* Cards Styles
+*/
+
+.card-task {
+    padding: 2rem;
+    border-radius: 1rem;
+    -webkit-box-shadow: 0px 0px 12px 6px rgba(34, 60, 80, 0.07);
+    -moz-box-shadow: 0px 0px 12px 6px rgba(34, 60, 80, 0.07);
+    box-shadow: 0px 0px 12px 6px rgba(34, 60, 80, 0.07);
+}
+
+.card-header {
+    border-bottom: 0.1rem solid rgba(34, 60, 80, 0.2);
+    margin-bottom: 1.5rem;
+}
+
+.card-header__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.card-checkbox input[type="checkbox"] {
+    display: none;
+}
+
+.card-checkbox input[type="checkbox"]+label {
+    display: block;
+    position: relative;
+    padding-left: 3rem;
+    cursor: pointer;
+    font-size: 1.8rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.card-checkbox input[type="checkbox"]+label::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    width: 2rem;
+    height: 2rem;
+    border-radius: 0.5rem;
+    border: 0.1rem solid var(--light-gray-color);
+    background-color: var(--white-color);
+}
+
+.card-checkbox input[type="checkbox"]:checked+label::before {
+    background-color: var(--orange-color);
+    border-color: var(--orange-color);
+}
+
+.card-checkbox .secondary-heading {
+    margin: 0;
+}
+
+.menu-btn {
+    color: var(--gray-color);
+    font-size: 1.6rem;
+
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-btn:hover {
+    color: var(--orange-color);
+}
+
+.card-task .card-results {
+    font-size: 1.2rem;
+    color: var(--gray-color);
+    text-align: end;
+    margin-bottom: 1rem;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-body__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.task-checkbox input[type="checkbox"] {
+    display: none;
+}
+
+.task-checkbox input[type="checkbox"]+label {
+    display: block;
+    position: relative;
+    padding-left: 2.5rem;
+    cursor: pointer;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--gray-color);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin-left: 2rem;
+}
+
+.task-checkbox input[type="checkbox"]+label::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    width: 1.3rem;
+    height: 1.3rem;
+    border-radius: 0.4rem;
+    border: 0.1rem solid var(--light-gray-color);
+    background-color: var(--white-color);
+}
+
+.task-checkbox input[type="checkbox"]:checked+label::before {
+    background-color: var(--orange-color);
+    border-color: var(--orange-color);
+}
+
+.card-body .outline-btn {
+    align-self: flex-end;
+}
+
+/*
+* Pagination Styles
+*/
+
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 2.5rem;
+
+    margin-bottom: 3rem;
+}
+
+.pagination-prev,
+.pagination-next {
+    font-size: 1.4rem;
+    color: var(--gray-color);
+
+    transition: all 0.3s ease-in-out;
+}
+
+.pagination-btn {
+    color: var(--light-gray-color);
+    font-size: 1.6rem;
+
+    transition: all 0.3s ease-in-out;
+}
+
+.pagination-btn:hover,
+.pagination-prev:not(.disabled):hover,
+.pagination-next:not(.disabled):hover {
+    color: var(--orange-color);
+    transform: scale(1.2);
+}
+
+
+.pagination-prev.disabled {
+    color: var(--orange-color);
+    opacity: 0.5;
+    pointer-events: none;
+    font-size: 1.2rem;
+}
+
+.pagination-btn.active {
+    color: var(--orange-color);
 }
